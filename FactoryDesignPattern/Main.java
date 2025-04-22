@@ -1,6 +1,8 @@
 package FactoryDesignPattern;
 // shape example
 
+// factory design pattern we create
+
 interface Shape{
     public void draw();
 }

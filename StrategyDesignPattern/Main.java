@@ -47,5 +47,6 @@ public class Main {
 
         Authenticator authenticator = new Authenticator(new GitHubAuth());
         boolean flag = authenticator.login("pankaj", "1234");
+        System.out.println(flag);
     }
 }

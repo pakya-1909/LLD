@@ -2,6 +2,14 @@ package DecoratorDesignPattern;
 
 // coffee price calculation system
 
+
+/*
+
+    in decorator design pattern getCost method call the super class and then the super class call the
+    corresponding item get cost methods.
+
+ */
+
 interface CoffeeMachineComponents{
     public int getCost();
     public String description();
@@ -117,7 +125,7 @@ class Cream extends CoffeeDecorator{
 
 public class Main {
     public static void main(String[] args) {
-        CoffeeMachineComponents myOrder = new Cream(new Sugar(new Milk(new FilterCoffee())));
+        CoffeeMachineComponents myOrder = new Sugar(new Milk(new FilterCoffee()));
         System.out.println(myOrder.getCost());
         System.out.println(myOrder.description());
     }

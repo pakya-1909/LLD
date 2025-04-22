@@ -1,5 +1,12 @@
 package StateDesignPattern;
 
+
+/*
+    in state design pattern we set the state of the machine and then change the state of the machine
+    according to the step taken by the consumer
+ */
+
+
 interface VendingState {
     void insertCoin(VendingMachine machine);
     void selectProduct(VendingMachine machine, String product);
